@@ -40,9 +40,13 @@ The ? symbol demonstrates a query, because this address will need to be queried 
 These symbols_\.- within the 1st set of square brackets [] indicate that these are acceptable sybols to have in the username or the domain name. 
 The @ symbol divides the username from the domain. 
 ### The OR Operator
-
+The most prominent OR operator is the "vertical bar pipe |," tell it to match either what is before or after the | ; for example, a | b means match either a or b. In order to use it in a phrase, it needs to be in its own ( a | b ), but will then produce one of those results within the code.
 ### Flags
-
+Flags modify how a regex pattern behaves when encountering matching text. These are appended at the end of the regular expression and can be combined with other flags in any order (which doesn't matter). The 3 most common ones that are utilized include: #1: "i" for "ignore case", means that the pattern is case-insensitive, so "ignore upper or lower case". #2: "g" for "global scope", so search for all matches, instead of only returning the first one (search/find on webpages for text are an example of this). #3: "m" for "multi-line", to take in specified elements from multiple lines. For example, In the following array
+[ 1,
+2,
+3 ];
+Adding a "mg" to the end of the regex will tell it to take in all 3 numbers (g) from multiple lines (m). 
 ### Character Escapes
 "+" matches the previous token 1+ (unlimited), or as many times as possible, giving back as needed (greedy quantifier only). 
 ## Author
